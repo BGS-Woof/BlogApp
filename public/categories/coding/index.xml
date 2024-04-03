@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on SamkaBlog</title>
+    <link>http://localhost:1313/categories/coding/</link>
+    <description>Recent content in Coding on SamkaBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Apr 2024 13:00:58 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/my-first-post/</link>
+      <pubDate>Wed, 03 Apr 2024 13:00:58 +0600</pubDate>
+      <guid>http://localhost:1313/my-first-post/</guid>
+      <description>Test Content</description>
+    </item>
+  </channel>
+</rss>

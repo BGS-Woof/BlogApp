@@ -1,0 +1,14 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'SamkaBlog'
+publish = "vercel"
+
+paginate = 4
+
+[params]
+ description = "The most useful blog"
+ dateFormat = "Jan 2, 2006"
+
+[taxonomies]
+ category = "categories"
+ author = "authors"
