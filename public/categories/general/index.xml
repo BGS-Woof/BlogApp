@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General on SamkaBlog</title>
-    <link>https://blogweb-navy.vercel.app/categories/general/</link>
+    <link>http://localhost:1313/categories/general/</link>
     <description>Recent content in General on SamkaBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Nov 2023 16:55:24 +0100</lastBuildDate>
-    <atom:link href="https://blogweb-navy.vercel.app/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Fifth Post My Fifth Post My Fifth Post </title>
-      <link>https://blogweb-navy.vercel.app/test/</link>
+      <link>http://localhost:1313/test/</link>
       <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
-      <guid>https://blogweb-navy.vercel.app/test/</guid>
+      <guid>http://localhost:1313/test/</guid>
       <description>Test Conten</description>
     </item>
   </channel>

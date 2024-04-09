@@ -9,24 +9,31 @@
     <lastBuildDate>Wed, 22 Nov 2023 16:55:24 +0100</lastBuildDate>
     <atom:link href="https://blogweb-navy.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coding</title>
-      <link>https://blogweb-navy.vercel.app/categories/coding/</link>
+      <title>Beginners</title>
+      <link>https://blogweb-navy.vercel.app/categories/beginners/</link>
       <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
-      <guid>https://blogweb-navy.vercel.app/categories/coding/</guid>
+      <guid>https://blogweb-navy.vercel.app/categories/beginners/</guid>
       <description></description>
     </item>
     <item>
-      <title>General</title>
-      <link>https://blogweb-navy.vercel.app/categories/general/</link>
+      <title>Css</title>
+      <link>https://blogweb-navy.vercel.app/categories/css/</link>
       <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
-      <guid>https://blogweb-navy.vercel.app/categories/general/</guid>
+      <guid>https://blogweb-navy.vercel.app/categories/css/</guid>
       <description></description>
     </item>
     <item>
-      <title>Life</title>
-      <link>https://blogweb-navy.vercel.app/categories/life/</link>
+      <title>Html</title>
+      <link>https://blogweb-navy.vercel.app/categories/html/</link>
       <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
-      <guid>https://blogweb-navy.vercel.app/categories/life/</guid>
+      <guid>https://blogweb-navy.vercel.app/categories/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Js</title>
+      <link>https://blogweb-navy.vercel.app/categories/js/</link>
+      <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
+      <guid>https://blogweb-navy.vercel.app/categories/js/</guid>
       <description></description>
     </item>
   </channel>

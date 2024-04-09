@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=Valentine’s&#32;Day&#32;Project.>
+    <title>Simple Valentine’s Day Project with JS</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+    <div class="logo">
+        <a href="/">SamkaBlog</a>
+    </div>
+    <div class="links">
+        <a href="#">SamkaBlog</a>
+        <a href="/categories">Categories</a>
+    </div>
+</nav>
+        
+<div class="single">
+  <div class="singleHead">
+    <div class="singleHeadTexts">
+      <h1 class="singleHeadTitle">Simple Valentine’s Day Project with JS</h1>
+      <p class="singleHeadDesc">Valentine’s Day Project.</p>
+      <div class="signleHeadDetail">
+        <img
+          src=/images/avatar.jpeg
+          loading="lazy"
+          alt=""
+          class="singleAvatar"
+        />
+        <span> 
+         
+        <a href=https://blogweb-navy.vercel.app/authors/samir-rahmatulaev/>Samir Rahmatulaev</a>
+        
+        </span>
+
+         
+        <a href=https://blogweb-navy.vercel.app/categories/js/ class="singleCategory">js</a>
+         
+        <a href=https://blogweb-navy.vercel.app/categories/html/ class="singleCategory">html</a>
+         
+        <a href=https://blogweb-navy.vercel.app/categories/css/ class="singleCategory">css</a>
+         
+        <a href=https://blogweb-navy.vercel.app/categories/beginners/ class="singleCategory">beginners</a>
+        
+      </div>
+      <time>Nov 22, 2023</time>
+    </div>
+    <img src=/images/valentineb.svg alt=Simple&#32;Valentine’s&#32;Day&#32;Project&#32;with&#32;JS class="singleHeadImg" />
+  </div>
+  <div class="singleBottom">
+    <div class="singleContent"><h2 id="introduction">Introduction</h2>
+<p>This JavaScript project is an interactive application where users can interact with &ldquo;Yes&rdquo; and &ldquo;No&rdquo; buttons to change the displayed image. When the user clicks the &ldquo;Yes&rdquo; button, the image switches to another one, and similarly, clicking the &ldquo;No&rdquo; button triggers a change in the displayed image. Each time the user performs an action, the displayed image changes, creating an engaging and visually appealing experience.</p>
+<h2 id="html-code">HTML Code</h2>
+<p>Let&rsquo;s build a structure of our project with HTML.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Will you be my valentine?&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shortcut icon&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heart-fill.svg&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image/x-icon&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;valentine-img&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ask.gif&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;valentine-text&#34;</span>&gt;Will you be my valentine?&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;acceptance&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;acceptance-btn&#34;</span>&gt;YES!&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;refuse&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;refuse-btn&#34;</span>&gt;NO!&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="css-code">CSS Code</h2>
+<p>Let&rsquo;s add some styling with CSS.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">*</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">box-sizing</span>: <span style="color:#66d9ef">border-box</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Poppins&#34;</span>, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>#valentine-img {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">grid</span>;
+</span></span><span style="display:flex;"><span>  place-items: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">vh</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">content</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h2</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#e75480</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">36</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">text-shadow</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">acceptance</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">refuse</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">text-shadow</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">transition</span>: <span style="color:#ae81ff">0.6</span><span style="color:#66d9ef">s</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">acceptance</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#e75480</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">refuse</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#5b5b5b</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">acceptance</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#d64571</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">refuse</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#494949</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="js">JS</h2>
+<p>Now let&rsquo;s make our project alive with JS.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Getting html elements
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">valentine_img</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;valentine-img&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">valentine_text</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;valentine-text&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">acceptance_btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;acceptance-btn&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">refuse_btn</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;refuse-btn&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;number&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Array of images to be displayed on refusal
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">images_refuse</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;sad.gif&#34;</span>, <span style="color:#e6db74">&#34;sad2.gif&#34;</span>, <span style="color:#e6db74">&#34;sad3.gif&#34;</span>, <span style="color:#e6db74">&#34;angry.gif&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Array of textual messages to be displayed on refusal
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">text_refuse</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Maybe you want to change your opinion?&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Maybe you can give a chance, please?&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Please I&#39;m begging you with all my heart!&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;You don&#39;t deserve me!&#34;</span>,
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">currentIndex</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">// Index of the current image/text in the refusal arrays
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Event handler for the refusal button
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">refuse_btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Check if we&#39;ve reached the end of either the images or text arrays
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">currentIndex</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">images_refuse</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">||</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">currentIndex</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">text_refuse</span>.<span style="color:#a6e22e">length</span>
+</span></span><span style="display:flex;"><span>  ) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">refuse_btn</span>.<span style="color:#a6e22e">disabled</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#75715e">// If so, disable the refusal button
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Set new image and text on refusal
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">valentine_img</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">images_refuse</span>[<span style="color:#a6e22e">currentIndex</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">valentine_text</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">text_refuse</span>[<span style="color:#a6e22e">currentIndex</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">num</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>; <span style="color:#75715e">// Clear the phone number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">currentIndex</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// Increment index for the next image/text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Event handler for the acceptance button
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">acceptance_btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Set image and text on acceptance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">valentine_img</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;love-happy.gif&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">valentine_text</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;THANK YOU MY LOVE!&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">num</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Call me baby: +996552911166))&#34;</span>; <span style="color:#75715e">// Provide the phone number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span></code></pre></div><h2 id="notification">Notification!</h2>
+<p>For this project you should add at least 6 images no less!</p>
+<p>I think we can finish here, you can also view the source code of this project on my <strong><a href="https://github.com/BGS-Woof/Valentine-Day-poll">GitHub account</a></strong></p>
+</div>
+  </div>
+</div>
+
+        <div class="footer">
+  <div class="footerLinks">
+    <a href="/">SamkaBlog</a> | <a href="/categories">Categories</a> |
+    <a href="/sitemap.xml">sitemap</a>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </div>
+  <div class="social">
+    <a href="https://www.instagram.com/mr.__snowman/" target="_blank">
+      <i class="ri-instagram-line social-icon"></i>
+    </a>
+  </div>
+</div>
+    </div>
+</body>
+</html>

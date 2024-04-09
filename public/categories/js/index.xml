@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on SamkaBlog</title>
+    <link>https://blogweb-navy.vercel.app/categories/js/</link>
+    <description>Recent content in Js on SamkaBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Nov 2023 16:55:24 +0100</lastBuildDate>
+    <atom:link href="https://blogweb-navy.vercel.app/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Valentine’s Day Project with JS</title>
+      <link>https://blogweb-navy.vercel.app/valentines-project/</link>
+      <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
+      <guid>https://blogweb-navy.vercel.app/valentines-project/</guid>
+      <description>Introduction This JavaScript project is an interactive application where users can interact with &amp;ldquo;Yes&amp;rdquo; and &amp;ldquo;No&amp;rdquo; buttons to change the displayed image. When the user clicks the &amp;ldquo;Yes&amp;rdquo; button, the image switches to another one, and similarly, clicking the &amp;ldquo;No&amp;rdquo; button triggers a change in the displayed image. Each time the user performs an action, the displayed image changes, creating an engaging and visually appealing experience.&#xA;HTML Code Let&amp;rsquo;s build a structure of our project with HTML.</description>
+    </item>
+  </channel>
+</rss>
