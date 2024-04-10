@@ -341,6 +341,20 @@ a {
   }
 }
 
+@media (max-width: 475px) {
+  .navbar {
+    max-width: 100%;
+  }
+
+  .highlight {
+    max-width: 396px;
+  }
+
+  .signleHeadDetail {
+    gap: 5px;
+  }
+}
+
 @media (max-width: 350px) {
   .navbar {
     max-width: 100%;
