@@ -340,3 +340,17 @@ a {
     gap: 10px;
   }
 }
+
+@media (max-width: 350px) {
+  .navbar {
+    max-width: 100%;
+  }
+
+  .highlight {
+    max-width: 326px;
+  }
+
+  .signleHeadDetail {
+    gap: 5px;
+  }
+}
