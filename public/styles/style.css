@@ -322,3 +322,21 @@ a {
     max-width: 435px;
   }
 }
+
+@media (max-width: 568px) {
+  .container {
+    max-width: 435px;
+  }
+
+  .navbar {
+    width: 415px;
+  }
+
+  .highlight {
+    max-width: 415px;
+  }
+
+  .signleHeadDetail {
+    gap: 10px;
+  }
+}
